@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Perfil académico y tecnológico del Mtro. José Orozco Núñez." />
+  <title>PROJECT SYNAPSE | Mtro. José Orozco Núñez</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="starfield" aria-hidden="true"></canvas>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <div id="boot-screen" class="boot-screen">
+    <div class="boot-terminal">
+      <p>> INITIALIZING PROJECT SYNAPSE...</p>
+      <p>> LOADING CURIOSITY... <span>100%</span></p>
+      <p>> LOADING KNOWLEDGE... <span>100%</span></p>
+      <p>> LOADING COFFEE... <span>83%</span></p>
+      <p>> ACCESS GRANTED.</p>
+      <button id="enter-site" class="terminal-button">ENTRAR AL ARCHIVO</button>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <a href="#inicio" class="brand">
+      <span class="brand-mark">SYN</span>
+      <span>PROJECT SYNAPSE</span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+
+    <nav class="main-nav">
+      <a href="#historia">Historia</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#investigacion">Investigación</a>
+      <a href="#docencia">Docencia</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero section">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">NEURAL KNOWLEDGE ARCHIVE · 2045</p>
+        <h1>Mtro. José<br><span>Orozco Núñez</span></h1>
+        <p class="roles">Profesor · Investigador · Desarrollador</p>
+        <p class="hero-text">
+          Transformando la educación mediante software, inteligencia artificial
+          e innovación tecnológica.
+        </p>
+        <div class="hero-actions">
+          <a href="#proyectos" class="button primary">Explorar proyectos</a>
+          <a href="#historia" class="button secondary">Conocer mi historia</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="portrait-shell">
+          <div class="portrait-glow"></div>
+          <div class="portrait-placeholder">
+            <div class="avatar-head"></div>
+            <div class="avatar-body"></div>
+            <span>ANIME PROFILE<br>PLACEHOLDER</span>
+          </div>
+          <div class="orbit orbit-one"><span>AI</span></div>
+          <div class="orbit orbit-two"><span>EDU</span></div>
+          <div class="orbit orbit-three"><span>DEV</span></div>
+        </div>
+
+        <div class="hud">
+          <div><span>Curiosidad</span><b>∞</b></div>
+          <div><span>Investigación</span><b>ONLINE</b></div>
+          <div><span>Docencia</span><b>ACTIVE</b></div>
+          <div><span>Café</span><b>83%</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mission section compact">
+      <div class="mission-card glass reveal">
+        <span class="section-code">MISSION_01</span>
+        <p>
+          Ayudo a instituciones educativas a transformar la enseñanza mediante
+          soluciones tecnológicas, inteligencia artificial y desarrollo de
+          software que fortalecen el aprendizaje.
+        </p>
+      </div>
+    </section>
+
+    <section id="historia" class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">ARCHIVO DE ORIGEN</p>
+        <h2>La tecnología siempre<br><span>me ha parecido magia.</span></h2>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="timeline-icon">💾</div>
+          <div class="timeline-content glass">
+            <span>EPISODE I</span>
+            <h3>Todo comenzó con un disquete</h3>
+            <p>
+              Desde niño conocí las computadoras cuando todavía se utilizaban
+              monitores de TRC y disquetes de 5¼ pulgadas. Para arrancar la
+              máquina era necesario insertar el disco que contenía el sistema
+              operativo. Parecía magia, y quise descubrir cómo funcionaba.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-icon">⌨️</div>
+          <div class="timeline-content glass">
+            <span>EPISODE II</span>
+            <h3>Después descubrí que podía crear</h3>
+            <p>
+              La programación hizo la experiencia aún más fascinante: mediante
+              instrucciones podía lograr que una computadora hiciera lo que le
+              pidiera. Las ideas podían convertirse en sistemas reales.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-icon">🎓</div>
+          <div class="timeline-content glass">
+            <span>EPISODE III</span>
+            <h3>Enseñar también es aprender</h3>
+            <p>
+              Siempre me ha gustado aprender y compartir lo que descubro.
+              Enseñar representa un reto, pero también una de las mejores formas
+              de comprender algo con mayor profundidad.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-icon">🤖</div>
+          <div class="timeline-content glass">
+            <span>EPISODE IV</span>
+            <h3>La inteligencia artificial vuelve a sorprenderme</h3>
+            <p>
+              Hoy, la IA generativa y los modelos multimodales me producen la
+              misma sensación de asombro que aquellas primeras computadoras:
+              abren nuevas posibilidades para investigar, enseñar y construir.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">THE LAB</p>
+        <h2>Proyectos que conectan<br><span>software y educación.</span></h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card glass reveal">
+          <div class="project-status"><span></span> ONLINE</div>
+          <p class="project-index">PROJECT_01</p>
+          <h3>MiUDG Dashboard</h3>
+          <p>
+            Integración de perfiles, cursos, servicios y contenidos
+            institucionales en una experiencia unificada para estudiantes.
+          </p>
+          <div class="tags"><span>Drupal</span><span>Moodle</span><span>PostgreSQL</span></div>
+        </article>
+
+        <article class="project-card glass reveal">
+          <div class="project-status"><span></span> ACTIVE</div>
+          <p class="project-index">PROJECT_02</p>
+          <h3>Analítica educativa</h3>
+          <p>
+            Herramientas para identificar retrasos, actividades pendientes y
+            señales de riesgo académico en plataformas educativas.
+          </p>
+          <div class="tags"><span>Python</span><span>SQL</span><span>Learning Analytics</span></div>
+        </article>
+
+        <article class="project-card glass reveal">
+          <div class="project-status"><span></span> RESEARCH</div>
+          <p class="project-index">PROJECT_03</p>
+          <h3>IA para la educación</h3>
+          <p>
+            Exploración de modelos generativos, asistentes, RAG y entornos
+            multimodales para ampliar las posibilidades del aprendizaje.
+          </p>
+          <div class="tags"><span>LLMs</span><span>RAG</span><span>Multimodal</span></div>
+        </article>
+
+        <article class="project-card glass reveal">
+          <div class="project-status"><span></span> BUILDING</div>
+          <p class="project-index">PROJECT_04</p>
+          <h3>Automatización institucional</h3>
+          <p>
+            Soluciones que conectan sistemas, simplifican procesos y permiten
+            que la tecnología trabaje de forma más útil para las personas.
+          </p>
+          <div class="tags"><span>APIs</span><span>FastAPI</span><span>Linux</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="investigacion" class="section split-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">RESEARCH NODE</p>
+        <h2>Lo que estoy<br><span>explorando ahora.</span></h2>
+      </div>
+      <div class="explore-panel glass reveal">
+        <ul>
+          <li><span>01</span> Aplicaciones educativas de IA generativa</li>
+          <li><span>02</span> Modelos multimodales y agentes inteligentes</li>
+          <li><span>03</span> Plataformas universitarias más humanas</li>
+          <li><span>04</span> Analítica del aprendizaje</li>
+          <li><span>05</span> Modelos locales y soberanía tecnológica</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="docencia" class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">LEARNING MODULE</p>
+        <h2>Aprender, construir<br><span>y compartir.</span></h2>
+      </div>
+
+      <div class="pillars">
+        <article class="pillar glass reveal">
+          <span>01</span>
+          <h3>Investigación</h3>
+          <p>Conocimiento aplicado a tecnología educativa e inteligencia artificial.</p>
+        </article>
+        <article class="pillar glass reveal">
+          <span>02</span>
+          <h3>Software</h3>
+          <p>Plataformas y herramientas diseñadas para resolver problemas reales.</p>
+        </article>
+        <article class="pillar glass reveal">
+          <span>03</span>
+          <h3>Educación</h3>
+          <p>Docencia universitaria centrada en la curiosidad y la experimentación.</p>
+        </article>
+      </div>
+
+      <div class="tech-cloud reveal" aria-label="Tecnologías">
+        <span>Python</span><span>PostgreSQL</span><span>Moodle</span><span>Drupal</span>
+        <span>FastAPI</span><span>Django</span><span>Linux</span><span>Docker</span>
+        <span>JavaScript</span><span>PHP</span><span>Nginx</span><span>PyTorch</span>
+        <span>Hugging Face</span><span>OpenAI</span><span>RAG</span><span>LLMs</span>
+      </div>
+    </section>
+
+    <section class="quote-section section compact">
+      <div class="quote-card glass reveal">
+        <p id="daily-quote">“La mejor forma de aprender algo es enseñarlo.”</p>
+        <span>TRANSMISSION FROM THE ARCHIVE</span>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact section">
+      <div class="contact-panel glass reveal">
+        <p class="eyebrow">FINAL EPISODE</p>
+        <h2>Sigamos construyendo.</h2>
+        <p>
+          Las mejores ideas aparecen cuando la investigación, la educación y
+          el desarrollo de software trabajan juntos.
+        </p>
+        <a href="mailto:jorozco@udg.mx" class="button primary">Iniciar conversación</a>
+      </div>
+    </section>
+  </main>
+
+  <button id="syn-button" class="syn-button" aria-label="Abrir asistente SYN">SYN</button>
+  <div id="syn-panel" class="syn-panel glass" aria-hidden="true">
+    <button id="syn-close" aria-label="Cerrar asistente">×</button>
+    <p class="eyebrow">SYN · AI ARCHIVE ASSISTANT</p>
+    <h3>Bienvenido al archivo.</h3>
+    <p>
+      Esta primera versión aún no tiene una IA conectada, pero aquí vivirá el
+      asistente que responderá preguntas sobre proyectos, docencia e investigación.
+    </p>
+  </div>
+
+  <footer>
+    <span>PROJECT SYNAPSE · PROJECT HIKARI</span>
+    <span>© 2026 Mtro. José Orozco Núñez</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
